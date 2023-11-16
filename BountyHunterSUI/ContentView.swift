@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var fvm = FugitiveViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List(fvm.postData) { post in
+                HStack {
+                    Text("\(post.id)")
+                        .padding()
+                        .overlay(Circle().stroke(.blue))
+                    Text(post.title)
+                        .bold()
+                        .lineLimit(1)
+                }
+            }
+            .refreshable {
+                await fvm.fetchData()
+            }
+            .navigationTitle("Fugitives")
+            .onAppear {
+                if fvm.postData.isEmpty {
+                    Task {
+                        await fvm.fetchData()
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 

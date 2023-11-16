@@ -11,6 +11,8 @@
 		3D5C88722B0490F900D85E6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C88712B0490F900D85E6D /* ContentView.swift */; };
 		3D5C88742B0490FB00D85E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C88732B0490FB00D85E6D /* Assets.xcassets */; };
 		3D5C88772B0490FB00D85E6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C88762B0490FB00D85E6D /* Preview Assets.xcassets */; };
+		3D5C887E2B05DF6700D85E6D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C887D2B05DF6700D85E6D /* APIService.swift */; };
+		3D5C88802B05E08700D85E6D /* FugitiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C887F2B05E08700D85E6D /* FugitiveViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3D5C88712B0490F900D85E6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D5C88732B0490FB00D85E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5C88762B0490FB00D85E6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D5C887D2B05DF6700D85E6D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3D5C887F2B05E08700D85E6D /* FugitiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FugitiveViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				3D5C88712B0490F900D85E6D /* ContentView.swift */,
 				3D5C88732B0490FB00D85E6D /* Assets.xcassets */,
 				3D5C88752B0490FB00D85E6D /* Preview Content */,
+				3D5C887D2B05DF6700D85E6D /* APIService.swift */,
+				3D5C887F2B05E08700D85E6D /* FugitiveViewModel.swift */,
 			);
 			path = BountyHunterSUI;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5C88722B0490F900D85E6D /* ContentView.swift in Sources */,
+				3D5C88802B05E08700D85E6D /* FugitiveViewModel.swift in Sources */,
+				3D5C887E2B05DF6700D85E6D /* APIService.swift in Sources */,
 				3D5C88702B0490F900D85E6D /* BountyHunterSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
